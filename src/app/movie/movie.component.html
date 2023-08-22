@@ -1,0 +1,87 @@
+<app-header></app-header>
+
+<div class="movie">
+
+    <div class="bg">
+        <img [src]="movie.bg">
+    </div>
+
+    <div class="dets" *ngFor="let detalhes of movie.detalhes">
+
+        <div class="dets-left">
+
+            <div class="poster"><img [src]="movie.poster" alt=""></div>
+
+        </div>
+    
+        <div class="dets-right">
+            
+            <div class="title"><h1>{{movie.titulo}}</h1></div>
+
+            <div class="top-right">
+            
+                    <div class="nota"><fa-icon [icon]="starIcon"></fa-icon>{{movie.nota}}</div>
+
+                    <div class="separator"></div>
+            
+                    <div class="duracao">{{detalhes.duracao}}</div>
+                    
+                    <div class="separator"></div>
+            
+                    <div class="data">{{detalhes.data}}</div>
+        
+                    <div class="separator"></div>
+        
+                    <div class="classi">{{detalhes.classificacao}}</div>
+
+            </div>
+                
+            <div class="genero">{{detalhes.genero}}</div>
+            
+            <div class="sinopse">{{detalhes.sinopse}}</div>
+    
+            <div class="elenco"><h4>Estrelando</h4>
+            {{detalhes.elenco}}</div>
+            
+            <div class="direcao"><h4>Direção/Criação</h4>
+            {{detalhes.direcao}} {{detalhes.criacao}}</div>
+
+            <div class="roteiro"><h4>Roteiro</h4>
+            {{detalhes.roteiro}}</div>
+
+        </div>
+
+    </div>
+
+    <div class="player" *ngFor="let detalhes of movie.detalhes">
+        
+        <h2>Escolha o idioma</h2>
+    
+        <div class="btns">
+            <button class="dub-btn" onclick="func1();">DUBLADO</button>
+        </div>
+        
+        <!--THIS IS THE PLAYER-->
+
+        <div class="hidden" id="cls">
+        <p>obs: caso o player não apareça, recarregue a página!</p>
+
+          <img class="movie-player"
+            style="width: 100%; margin: auto; display: block;"
+            class="vidyard-player-embed"
+            src="https://play.vidyard.com/{{movie.filme}}.jpg"
+            [attr.data-uuid]="movie.filme"
+            data-v="4"
+            data-type="inline"
+            />
+
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+

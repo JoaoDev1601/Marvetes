@@ -1,0 +1,38 @@
+.movie-list{
+    background-color: hsla(250, 13%, 11%, 1);
+    font-family: "Roboto", sans-serif;
+
+    .heading, .thumbnail{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    h4{
+        padding-left: 10px;
+        display: flex;
+        border-left: 5px solid rgb(150, 15, 15);
+    }
+    .cover img{
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .thumbnail {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    img{
+        width: 380px;
+        margin: 10px;
+        margin-bottom: 15px;
+    }
+
+    .name, .rating-value{
+        font-size: 18px;
+        margin-left: 15px;
+        font-family: "Roboto", sans-serif;
+        cursor: pointer;
+    }
+}
+
+    

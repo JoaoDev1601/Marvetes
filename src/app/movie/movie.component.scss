@@ -1,0 +1,140 @@
+.movie{
+    font-family: "Roboto", sans-serif;
+    background-color: hsla(250, 13%, 11%, 1);
+    position: relative;
+
+    
+
+    .bg{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        opacity: .1;
+        background-image: linear-gradient(0deg, hsla(250, 13%, 11%, 1), hsla(250, 13%, 11%, 0.9));
+    }
+    .bg img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.dets {
+    display: flex;
+    align-items: flex-start;
+
+    
+    .dets-left {
+        margin-right: 20px;
+    }
+
+    .dets-right {
+        display: flex;
+        flex-direction: column;
+    }
+    .dets-left, .dets-right {
+        position: relative;
+        z-index: 2;
+        padding: 50px;
+    }
+}
+
+.dets-left{
+    .poster img{
+        border-radius: 10px;
+        width: 350px;
+    }
+}
+
+.dets-right{
+    .title h1{
+        font-size: 35px;
+        font-weight: bold;
+    }
+    .separator {
+        width: 4px;
+        height: 4px;
+        background-color: #fff;
+        border-radius: 8px;
+    }
+
+    .top-right, .genero,
+    .sinopse{
+        margin-bottom: 10px;
+    }
+
+    .top-right {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 12px;
+    }
+    .classi{
+        background-color: rgb(19, 18, 22);
+        padding-right: 5px;
+        padding-left: 5px;
+        border-radius: 5px;
+    }
+
+    .genero{
+        opacity: .5;
+    }
+
+    .sinopse{
+        margin-bottom: 30px;
+    }
+
+    .elenco, .direcao, .roteiro{
+        margin: 15px;
+        gap: 8px;
+        margin-block-end: 12px;
+    }
+    .elenco h4{
+        font-size: 20px;
+        opacity: .5;
+    }
+
+    .direcao h4{
+        font-size: 20px;
+        opacity: .5;
+    }
+
+    .roteiro h4{
+        font-size: 20px;
+        opacity: .5;
+    }
+}
+
+.player{
+    margin-top: 100px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.btns{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hidden{
+    visibility: hidden;
+    margin-bottom: 5px;
+}
+
+.watch{
+    visibility: visible;
+}
+.dub-btn,
+.update{
+    background: linear-gradient(107.2deg, rgb(150, 15, 15) 10.6%, rgb(247, 0, 0) 91.1%);
+        color: #fff;
+        border: none;
+        border-radius: 15px;
+        padding: 10px;
+}
+.movie-player{
+    border-radius: 15px;
+}
