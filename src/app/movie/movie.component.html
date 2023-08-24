@@ -57,17 +57,11 @@
         
         <h2>Escolha o idioma</h2>
     
-        <div class="btns">
-            <button class="dub-btn" onclick="func1();">DUBLADO</button>
-        </div>
-        
-        <!--THIS IS THE PLAYER-->
+        <input class="dub-btn" type="button" value="Dublado" onClick="window.location.reload(true)">
 
-        <div class="hidden" id="cls">
-        <p>obs: caso o player não apareça, recarregue a página!</p>
+        <div id="cls">
 
           <img class="movie-player"
-            style="width: 100%; margin: auto; display: block;"
             class="vidyard-player-embed"
             src="https://play.vidyard.com/{{movie.filme}}.jpg"
             [attr.data-uuid]="movie.filme"
@@ -78,6 +72,7 @@
         </div>
 
     </div>
+    
 </div>
 
 

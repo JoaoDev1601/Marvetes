@@ -22,7 +22,7 @@
                                 <img src="https://www.themoviedb.org/t/p/original/rVSsjepWbzfS2gIM6Cd5MTKVjUA.jpg" alt="">
                             </div>
                             <figcaption>
-                                <h2>Guardiões da Galáxia Vol.3</h2>
+                                <a href="movie-list"><h2>Guardiões da Galáxia Vol.3</h2></a>
                                 <p class="snps">Peter Quill, que ainda está se recuperando da perda de Gamora, tem que reunir a sua equipe para defender o universo e proteger um dos seus. Uma missão que, se não for concluída com sucesso, pode levar ao fim dos Guardiões como os conhecemos.</p>
                             </figcaption>
                         </figure>
@@ -34,7 +34,7 @@
                                 <img src="https://www.themoviedb.org/t/p/original/zhSunwjOsNJ401vpPwBDHlhvLHj.jpg" alt="">
                             </div>
                             <figcaption>
-                                <h2>Homem-Formiga e a Vespa: Quantumania</h2>
+                                <a href="movie-list"><h2>Homem-Formiga e a Vespa: Quantumania</h2></a>
                                 <p class="snps">Scott Lang e Hope van Dyne em suas jornadas como super-heróis. Scott e sua família são puxados para o Reino Quântico, onde eles precisarão enfrentar um novo e terrível vilão: Kang, o Conquistador e M.O.D.O.K..</p>                       
                             </figcaption>
                         </figure>
@@ -46,7 +46,7 @@
                                 <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/F35E3E28AB316FE6A36E0D23604BDBA468F886E39F861BBB4CBC54D5BF9EEAD9/scale?width=1440&aspectRatio=1.78&format=jpeg" alt="">
                             </div>
                             <figcaption>
-                                <h2>Guardiões da Galáxia: Especial de Festas</h2>
+                                <a href="movie-list"><h2>Guardiões da Galáxia: Especial de Festas</h2></a>
                                 <p class="snps">Com a missão de tornar o Natal inesquecível para Quill, os Guardiões vão à Terra em busca do presente perfeito.</p>                    
                             </figcaption>
                         </figure>
@@ -58,7 +58,7 @@
                                 <img src="https://www.themoviedb.org/t/p/original/b42UaXsufDYQVjwNPaZbXVfJ38B.jpg" alt="">
                             </div>
                             <figcaption>
-                                <h2>Lobisomen na Noite</h2>
+                                <a href="movie-list"><h2>Lobisomen na Noite</h2></a>
                                 <p class="snps">Em uma noite escura e sombria, uma cabala secreta de caçadores de monstros emerge das sombras e se reúne no templo de Bloodstone após a morte de seu líder. </p>                       
                             </figcaption>
                         </figure>
@@ -70,7 +70,7 @@
                                 <img src="https://www.themoviedb.org/t/p/original/fmq4YxfqldYbNg4jE5zHqiuPxtR.jpg" alt="">
                             </div>
                             <figcaption>
-                                <h2>Thor: Amor e Trovão</h2>
+                                <a href="movie-list"><h2>Thor: Amor e Trovão</h2></a>
                                 <p class="snps">Thor parte em uma jornada de autodescoberta, diferente de tudo que ele já enfrentou. Mas seus esforços são interrompidos por um assassino galáctico conhecido como Gorr, o Carniceiro dos Deuses, que busca a extinção dos deuses. </p>                            
                             </figcaption>
                         </figure>
@@ -82,7 +82,7 @@
                                 <img src="https://www.themoviedb.org/t/p/original/9pjSsIjIUPwIcNgsOIq2QERGQjt.jpg" alt="">
                             </div>
                             <figcaption>
-                                <h2>Pantera Negra: Wakanda para Sempre</h2>
+                                <a href="movie-list"><h2>Pantera Negra: Wakanda para Sempre</h2></a>
                                 <p class="snps">A rainha Ramonda, Shuri, M'Baku, Okoye e as poderosas Dora Milaje lutam para proteger sua nação após a morte do rei T'Challa. Com a ajuda da Cão de Guerra Nakia e de Everett Ross, eles tentam encontrar um novo caminho para Wakanda.</p>                            
                             </figcaption>
                         </figure>
@@ -125,10 +125,6 @@
                 <div class="cover" (click)="goToMovie('film', movie.titulo)">
                     <img [src]="movie.poster" alt="">
                 </div>
-
-                <div class="detail">
-                    <div class="name movie-details" (click)="goToMovie('fase1', movie.id)">{{movie.titulo}}</div>
-                </div>
             </div>
         </div>
 
@@ -144,10 +140,6 @@
                     <div class="cover" (click)="goToMovie('film', movie.titulo)">
                         <img [src]="movie.poster" alt="">
                     </div>
-    
-                    <div class="detail">
-                        <div class="name movie-details" (click)="goToMovie('fase2', movie.id)">{{movie.titulo}}</div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -161,10 +153,6 @@
                 <div class="f3" *ngFor="let movie of fase3">
                     <div class="cover" (click)="goToMovie('film', movie.titulo)">
                         <img [src]="movie.poster" alt="">
-                    </div>
-    
-                    <div class="detail">
-                        <div class="name movie-details" (click)="goToMovie('fase3', movie.id)">{{movie.titulo}}</div>
                     </div>
                 </div>
             </div>
@@ -180,10 +168,6 @@
                     <div class="cover" (click)="goToMovie('film', movie.titulo)">
                         <img [src]="movie.poster" alt="">
                     </div>
-    
-                    <div class="detail">
-                        <div class="name movie-details" (click)="goToMovie('fase4', movie.id)">{{movie.titulo}}</div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -198,10 +182,6 @@
                     <div class="cover" (click)="goToMovie('film', movie.titulo)">
                         <img [src]="movie.poster" alt="">
                     </div>
-    
-                    <div class="detail">
-                        <div class="name movie-details" (click)="goToMovie('fase5', movie.id)">{{movie.titulo}}</div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -215,11 +195,6 @@
                 <div class="cr-or" *ngFor="let movie of cronOrder">
                     <div class="cover" (click)="goToMovie('film', movie.titulo)">
                         <img [src]="movie.poster" alt="">
-
-                    </div>
-    
-                    <div class="detail">
-                        <div class="name movie-details" (click)="goToMovie('cronOrder', movie.id)">{{movie.titulo}}</div>
                     </div>
                 </div>
             </div>

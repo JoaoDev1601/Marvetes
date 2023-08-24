@@ -6,6 +6,9 @@
         margin-left: 10px;
         margin-right: 10px;
     }
+    .heading{
+        margin-top: 8px;
+    }
     h4{
         padding-left: 10px;
         display: flex;
@@ -22,17 +25,8 @@
         justify-content: center;
     }
     img{
-        width: 380px;
+        width: 300px;
         margin: 10px;
         margin-bottom: 15px;
     }
-
-    .name, .rating-value{
-        font-size: 18px;
-        margin-left: 15px;
-        font-family: "Roboto", sans-serif;
-        cursor: pointer;
-    }
-}
-
-    
+} 

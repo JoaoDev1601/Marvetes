@@ -1,28 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+  
+li{
+    list-style: none;
+}
+
 .header-container{
-    width: 100%;
-    height: 70px;
-    background-color: rgb(19, 18, 22);
+max-width: 100%;
+height: 80px;
+background-color: rgb(19, 18, 22);
+justify-content: space-between;
+position: sticky;
+top: 0;
+z-index: 9999;
+}
+
+.navbar{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: sticky;
-    top: 0;
-    z-index: 9999;
+    background-color: rgb(19, 18, 22);
+    padding: 20px;
+    color: #fff;
+    
+  .logo {
+    font-size: 32px;
+  }
+  .logo a:hover{
+    background: linear-gradient(107.2deg, rgb(150, 15, 15) 10.6%, rgb(247, 0, 0) 91.1%);
+    border-radius: 10px;
+    transition: .7s ease;
+    padding: 5px;
+  }
+}
 
-    .logo,.series,.filmes{
-        margin: 15px;
+.menu{
+    background-color: rgb(19, 18, 22);
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+}
+.menu li{
+    padding: 5px 14px;
+}
+.menu li:hover{
+    background: linear-gradient(107.2deg, rgb(150, 15, 15) 10.6%, rgb(247, 0, 0) 91.1%);
+    border-radius: 10px;
+    transition: .7s ease;
+}
+  
+.dropdown{
+    background-color: rgb(19, 18, 22);
+    padding: 1em 0;
+    position: absolute;
+    display: none;
+    border-radius: 8px;
+    top: 35px;
+}
+.dropdown li + li{
+    margin-top: 10px;
+}
+.dropdown li{
+    padding: 0.5em 1em;
+    width: 8em;
+    text-align: center;
+}
+.dropdown li:hover{
+    background-color: rgb(44, 43, 46);
+}
+
+input[type=checkbox]{
+    display: none;
+} 
+
+.hamburger{
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+  
+@media (max-width: 768px){
+   .menu{
+      display:none;
+      position: absolute;
+      background-color: rgb(19, 18, 22);
+      right: 0;
+      left: 0;
+      text-align: center;
+      padding: 16px 0;
     }
-    .logo{
-        font-size: 30px;
+    .menu li{
+        border-right: 1px solid darkred;
+        border-left: 1px solid darkred;
     }
-    .series,.filmes{
-        font-size: 20px;
+    .menu li:hover{
+      display: inline-block;
+      background-color:rgb(44, 43, 46);
+      transition: 0.3s ease;
     }
-    a{
-        background: linear-gradient(107.2deg, rgb(150, 15, 15) 10.6%, rgb(247, 0, 0) 91.1%);
-        text-decoration: none;
-        color: #fff;
-        border-radius: 15px;
-        padding: 10px;
+    .menu li + li{
+      margin-top: 12px;
+    }
+  
+    input[type=checkbox]:checked ~ .menu{
+      display: block;
+    }
+  
+    .hamburger{
+      display: block;
+    }
+  
+    .dropdown{
+      left: 50%;
+      top: 30px;
+      transform: translateX(35%);
     }
 }
