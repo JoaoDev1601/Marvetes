@@ -27,7 +27,7 @@ export class ShowComponent implements OnInit {
     this.type = this.route.snapshot.params['type'];
     this.titulo = this.route.snapshot.params['titulo'];
     if (this.type === 'serie') {
-      this.url = "http://localhost:4200/assets/data/mcu-ordem-crono.json";
+      this.url = "https://raw.githubusercontent.com/JoaoDev1601/api/main/mcu-ordem-crono.json";
     }
     this.getMovie();
     this.getEp();
@@ -46,7 +46,7 @@ export class ShowComponent implements OnInit {
   }
 
   getEp(): void {
-    this.http.get("http://localhost:4200/assets/data/episodios.json").subscribe((movies) => {
+    this.http.get("https://raw.githubusercontent.com/JoaoDev1601/api/main/episodios.json").subscribe((movies) => {
       this.ep = movies;
       console.log(this.ep);
     });
