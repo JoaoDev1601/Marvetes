@@ -16,6 +16,7 @@ import {VgControlsModule} from '@videogular/ngx-videogular/controls';
 import {VgOverlayPlayModule} from '@videogular/ngx-videogular/overlay-play';
 import {VgBufferingModule} from '@videogular/ngx-videogular/buffering';
 import { YouTubePlayerModule } from '@angular/youtube-player';
+import { EpisodeComponent } from './episode/episode.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { YouTubePlayerModule } from '@angular/youtube-player';
     MovieComponent,
     ShowComponent,
     MovieListComponent,
-    ShowListComponent
+    ShowListComponent,
+    EpisodeComponent
   ],
   imports: [
     BrowserModule,

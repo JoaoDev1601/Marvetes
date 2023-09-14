@@ -21,14 +21,14 @@ export class ShowListComponent implements OnInit{
   }
 
   getSeries() {
-    this.http.get("http://localhost:4200/assets/data/series.json").subscribe((movies) => {
+    this.http.get("https://raw.githubusercontent.com/JoaoDev1601/api/main/series.json").subscribe((movies) => {
       this.series = movies;
       console.log(this.series)
     })
   }
 
-  goToMovie(type:string, id:string) {
-    this.router.navigate(["movie", type, id]);
+  goToShow(type:string, id:string) {
+    this.router.navigate(["show", type, id]);
   }
 
 }

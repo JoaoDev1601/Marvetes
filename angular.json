@@ -35,7 +35,6 @@
               "src/styles.scss"
             ],
             "scripts": [
-              "node_modules/bootstrap/js/dist/VidYard.js"
             ]
           },
           "configurations": {
@@ -43,12 +42,12 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "600kb",
+                  "maximumError": "600kb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
+                  "maximumWarning": "5kb",
                   "maximumError": "5kb"
                 }
               ],

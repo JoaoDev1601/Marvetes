@@ -1,119 +1,78 @@
 <app-header></app-header>
 
 <div class="home">
-
+    
+    <!-- Carrosel com novos projetos -->
     <section class="carousel-sec">
+        
+        <div class="new">
+            <h4>O que há de novo no MCU?</h4>
+        </div>
 
         <div class="container">
     
-            <div class="carousel">
-    
-                <input type="radio" name="slides" checked="checked" id="slide-1">
-                <input type="radio" name="slides" id="slide-2">
-                <input type="radio" name="slides" id="slide-3">
-                <input type="radio" name="slides" id="slide-4">
-                <input type="radio" name="slides" id="slide-5">
-                <input type="radio" name="slides" id="slide-6">
-    
-                <ul class="carousel__slides">
-                    <li class="carousel__slide">
-                        <figure>
-                            <div>
-                                <img src="https://www.themoviedb.org/t/p/original/rVSsjepWbzfS2gIM6Cd5MTKVjUA.jpg" alt="">
-                            </div>
-                            <figcaption>
-                                <a href="movie-list"><h2>Guardiões da Galáxia Vol.3</h2></a>
-                                <p class="snps">Peter Quill, que ainda está se recuperando da perda de Gamora, tem que reunir a sua equipe para defender o universo e proteger um dos seus. Uma missão que, se não for concluída com sucesso, pode levar ao fim dos Guardiões como os conhecemos.</p>
-                            </figcaption>
-                        </figure>
-                    </li>
+            <div class="slider">
+
+                <input type="radio" name="testimonial" id="t-1">
+                <input type="radio" name="testimonial" id="t-2">
+                <input type="radio" name="testimonial" id="t-3" checked>
+                <input type="radio" name="testimonial" id="t-4">
+                <input type="radio" name="testimonial" id="t-5">
+
+                <div class="testimonials">
+
+                    <label class="item" for="t-1">
+                        <img src="https://www.themoviedb.org/t/p/original/b42UaXsufDYQVjwNPaZbXVfJ38B.jpg" alt="picture">
+                        <p>Em uma noite escura e sombria, uma cabala secreta de caçadores de monstros emerge das sombras e se reúne no templo de Bloodstone após a morte de seu líder. Em um estranho e macabro memorial à vida do líder.</p>
+                        <a href="movie/filme/Lobisomen%20na%20Noite"><h2>Lobisomen na Noite</h2></a>
+                    </label>
+
+                    <label class="item" for="t-2">
+                        <img src="https://image.tmdb.org/t/p/original/fmq4YxfqldYbNg4jE5zHqiuPxtR.jpg" alt="picture">
+                        <p>Thor parte em uma jornada de autodescoberta, diferente de tudo que ele já enfrentou. Mas seus esforços são interrompidos por um assassino galáctico conhecido como Gorr, o Carniceiro dos Deuses, que busca a extinção dos deuses.</p>
+                        <a href="movie/filme/Thor:%20Amor%20e%20Trovão"><h2>Thor: Amor e Trovão</h2></a>
+                    </label>
+
+                    <label class="item" for="t-3">
+                        <img src="https://image.tmdb.org/t/p/original/bgWWYcUIsnYWhHtSQyk3euwjBoL.jpg" alt="picture">
+                        <p>"Nick Fury descobre que uma facção de metamorfos Skrulls pretende invadir a Terra. Fury se junta a aliados incluindo Everett Ross, Maria Hill e o Skrull Talos, que estava vivendo na Terra. Juntos eles correm contra o tempo para impedir a invasão Skrull iminente e salvar a humanidade."</p>
+                        <a href="show/serie/Invasão%20Secreta"><h2>Invasão Secreta</h2></a>
+                    </label>
+
+                    <label class="item" for="t-4">
+                        <img src="https://www.themoviedb.org/t/p/original/rVSsjepWbzfS2gIM6Cd5MTKVjUA.jpg" alt="picture">
+                        <p>Peter Quill, que ainda está se recuperando da perda de Gamora, tem que reunir a sua equipe para defender o universo e proteger um dos seus. Uma missão que, se não for concluída com sucesso, pode levar ao fim dos Guardiões como os conhecemos.</p>
+                        <a href="movie/filme/Guardiões%20da%20Galáxia%20vol.3"><h2>Guardiões da Galáxia Vol.3</h2></a>
+                    </label>
                     
-                    <li class="carousel__slide">
-                        <figure>
-                            <div>
-                                <img src="https://www.themoviedb.org/t/p/original/zhSunwjOsNJ401vpPwBDHlhvLHj.jpg" alt="">
-                            </div>
-                            <figcaption>
-                                <a href="movie-list"><h2>Homem-Formiga e a Vespa: Quantumania</h2></a>
-                                <p class="snps">Scott Lang e Hope van Dyne em suas jornadas como super-heróis. Scott e sua família são puxados para o Reino Quântico, onde eles precisarão enfrentar um novo e terrível vilão: Kang, o Conquistador e M.O.D.O.K..</p>                       
-                            </figcaption>
-                        </figure>
-                    </li>
+                    <label class="item" for="t-5">
+                        <img src="https://www.themoviedb.org/t/p/original/zhSunwjOsNJ401vpPwBDHlhvLHj.jpg" alt="picture">
+                        <p>Scott Lang e Hope van Dyne em suas jornadas como super-heróis. Scott e sua família são puxados para o Reino Quântico, onde eles precisarão enfrentar um novo e terrível vilão: Kang, o Conquistador.</p>
+                        <a href="movie/filme/Homem-Formiga%20e%20a%20Vespa:%20Quantumania"><h2>Homem-Formiga e a Vespa: Quantumania</h2></a>
+                    </label>
+                    
+                </div>
 
-                    <li class="carousel__slide">
-                        <figure>
-                            <div>
-                                <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/F35E3E28AB316FE6A36E0D23604BDBA468F886E39F861BBB4CBC54D5BF9EEAD9/scale?width=1440&aspectRatio=1.78&format=jpeg" alt="">
-                            </div>
-                            <figcaption>
-                                <a href="movie-list"><h2>Guardiões da Galáxia: Especial de Festas</h2></a>
-                                <p class="snps">Com a missão de tornar o Natal inesquecível para Quill, os Guardiões vão à Terra em busca do presente perfeito.</p>                    
-                            </figcaption>
-                        </figure>
-                    </li>
+                <div class="dots">
 
-                    <li class="carousel__slide">
-                        <figure>
-                            <div>
-                                <img src="https://www.themoviedb.org/t/p/original/b42UaXsufDYQVjwNPaZbXVfJ38B.jpg" alt="">
-                            </div>
-                            <figcaption>
-                                <a href="movie-list"><h2>Lobisomen na Noite</h2></a>
-                                <p class="snps">Em uma noite escura e sombria, uma cabala secreta de caçadores de monstros emerge das sombras e se reúne no templo de Bloodstone após a morte de seu líder. </p>                       
-                            </figcaption>
-                        </figure>
-                    </li>
+                    <label for="t-1"></label>
+                    <label for="t-2"></label>
+                    <label for="t-3"></label>
+                    <label for="t-4"></label>
+                    <label for="t-5"></label>
 
-                    <li class="carousel__slide">
-                        <figure>
-                            <div>
-                                <img src="https://www.themoviedb.org/t/p/original/fmq4YxfqldYbNg4jE5zHqiuPxtR.jpg" alt="">
-                            </div>
-                            <figcaption>
-                                <a href="movie-list"><h2>Thor: Amor e Trovão</h2></a>
-                                <p class="snps">Thor parte em uma jornada de autodescoberta, diferente de tudo que ele já enfrentou. Mas seus esforços são interrompidos por um assassino galáctico conhecido como Gorr, o Carniceiro dos Deuses, que busca a extinção dos deuses. </p>                            
-                            </figcaption>
-                        </figure>
-                    </li>
-
-                    <li class="carousel__slide">
-                        <figure>
-                            <div>
-                                <img src="https://www.themoviedb.org/t/p/original/9pjSsIjIUPwIcNgsOIq2QERGQjt.jpg" alt="">
-                            </div>
-                            <figcaption>
-                                <a href="movie-list"><h2>Pantera Negra: Wakanda para Sempre</h2></a>
-                                <p class="snps">A rainha Ramonda, Shuri, M'Baku, Okoye e as poderosas Dora Milaje lutam para proteger sua nação após a morte do rei T'Challa. Com a ajuda da Cão de Guerra Nakia e de Everett Ross, eles tentam encontrar um novo caminho para Wakanda.</p>                            
-                            </figcaption>
-                        </figure>
-                    </li>
-                </ul>    
-                <ul class="carousel__thumbnails">
-                    <li>
-                        <label for="slide-1"><img src="https://www.themoviedb.org/t/p/original/rVSsjepWbzfS2gIM6Cd5MTKVjUA.jpg" alt=""></label>
-                    </li>
-                    <li>
-                        <label for="slide-2"><img src="https://www.themoviedb.org/t/p/original/zhSunwjOsNJ401vpPwBDHlhvLHj.jpg" alt=""></label>
-                    </li>
-                    <li>
-                        <label for="slide-3"><img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/F35E3E28AB316FE6A36E0D23604BDBA468F886E39F861BBB4CBC54D5BF9EEAD9/scale?width=1440&aspectRatio=1.78&format=jpeg" alt=""></label>
-                    </li>
-                    <li>
-                        <label for="slide-4"><img src="https://www.themoviedb.org/t/p/original/b42UaXsufDYQVjwNPaZbXVfJ38B.jpg" alt=""></label>
-                    </li>
-                    <li>
-                        <label for="slide-5"><img src="https://www.themoviedb.org/t/p/original/fmq4YxfqldYbNg4jE5zHqiuPxtR.jpg" alt=""></label>
-                    </li>
-                    <li>
-                        <label for="slide-6"><img src="https://www.themoviedb.org/t/p/original/9pjSsIjIUPwIcNgsOIq2QERGQjt.jpg" alt=""></label>
-                    </li>
-                </ul>
+                </div>
+                
             </div>
+            
         </div>
+
     </section>
     
+    <!-- Projetos divididos por fase -->
     <section class="movies-container">
 
+        <!-- Fase I -->
         <div class="fase1">
 
         <div class="heading">
@@ -122,14 +81,15 @@
 
         <div class="thumbnail">
             <div class="f1" *ngFor="let movie of fase1">
-                <div class="cover" (click)="goToMovie('film', movie.titulo)">
-                    <img [src]="movie.poster" alt="">
+                <div class="cover">
+                    <img [src]="movie.poster" alt="" (click)="goToMovie('filme', movie.titulo)">
                 </div>
             </div>
         </div>
 
         </div>
 
+        <!-- Fase II -->
         <div class="fase2">
             <div class="heading">
                 <h4>Universo Cinematográfico Marvel: Fase 2</h4>
@@ -137,13 +97,14 @@
     
             <div class="thumbnail">
                 <div class="f2" *ngFor="let movie of fase2">
-                    <div class="cover" (click)="goToMovie('film', movie.titulo)">
-                        <img [src]="movie.poster" alt="">
+                    <div class="cover">
+                        <img [src]="movie.poster" alt="" (click)="goToMovie('filme', movie.titulo)">
                     </div>
                 </div>
             </div>
         </div>
 
+        <!-- Fase III -->
         <div class="fase3">
             <div class="heading">
                 <h4>Universo Cinematográfico Marvel: Fase 3</h4>
@@ -151,13 +112,14 @@
     
             <div class="thumbnail">
                 <div class="f3" *ngFor="let movie of fase3">
-                    <div class="cover" (click)="goToMovie('film', movie.titulo)">
-                        <img [src]="movie.poster" alt="">
+                    <div class="cover">
+                        <img [src]="movie.poster" alt="" (click)="goToMovie('filme', movie.titulo)">
                     </div>
                 </div>
             </div>
         </div>
 
+        <!-- Fase IV -->
         <div class="fase4">
             <div class="heading">
                 <h4>Universo Cinematográfico Marvel: Fase 4</h4>
@@ -165,27 +127,31 @@
     
             <div class="thumbnail">
                 <div class="f4" *ngFor="let movie of fase4">
-                    <div class="cover" (click)="goToMovie('film', movie.titulo)">
-                        <img [src]="movie.poster" alt="">
+                    <div class="cover">
+                        <img [src]="movie.poster" alt="" (click)="goToMovie('filme', movie.titulo)">
+                        <img [src]="movie.p1" alt="" (click)="goToShow('serie', movie.titulo)">
                     </div>
                 </div>
             </div>
         </div>
 
+        <!-- Fase V -->
         <div class="fase5">
             <div class="heading">
                 <h4>Universo Cinematográfico Marvel: Fase 5</h4>
             </div>
     
             <div class="thumbnail">
-                <div class="f4" *ngFor="let movie of fase5">
-                    <div class="cover" (click)="goToMovie('film', movie.titulo)">
-                        <img [src]="movie.poster" alt="">
+                <div class="f5" *ngFor="let movie of fase5">
+                    <div class="cover">
+                        <img [src]="movie.poster" alt="" (click)="goToMovie('filme', movie.titulo)">
+                        <img [src]="movie.p1" alt="" (click)="goToShow('serie', movie.titulo)">
                     </div>
                 </div>
             </div>
         </div>
 
+        <!-- Ordem Cronológica -->
         <div class="crono-order">
             <div class="heading">
                 <h4>Universo Cinematográfico Marvel: Ordem Cronológica</h4>
@@ -193,13 +159,13 @@
     
             <div class="thumbnail">
                 <div class="cr-or" *ngFor="let movie of cronOrder">
-                    <div class="cover" (click)="goToMovie('film', movie.titulo)">
-                        <img [src]="movie.poster" alt="">
+                    <div class="cover" >
+                        <img [src]="movie.poster" alt="" (click)="goToMovie('filme', movie.titulo)">
+                        <img [src]="movie.p1" alt="" (click)="goToShow('serie', movie.titulo)">
                     </div>
                 </div>
             </div>
         </div>
-        
 
     </section>   
 

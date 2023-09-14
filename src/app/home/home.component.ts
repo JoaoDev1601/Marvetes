@@ -12,7 +12,6 @@ export class HomeComponent implements OnInit {
 
   starIcon = faStar;
 
-  novos:any;
   fase1:any;
   fase2:any;
   fase3:any;
@@ -23,7 +22,6 @@ export class HomeComponent implements OnInit {
   constructor(private http: HttpClient, private router: Router) { }
 
   ngOnInit(): void {
-      this.getNovos();
       this.getFase1();
       this.getFase2();
       this.getFase3();
@@ -32,50 +30,43 @@ export class HomeComponent implements OnInit {
       this.getCronOrder();
   }
 
-  getNovos() {
-    this.http.get("http://localhost:4200/assets/data/mcu-novos.json").subscribe((movies) => {
-      this.novos = movies;
-      console.log(this.novos);
-    });
-  }
-
   getFase1() {
-    this.http.get("http://localhost:4200/assets/data/mcu-fase-1.json").subscribe((movies) => {
+    this.http.get("https://raw.githubusercontent.com/JoaoDev1601/api/main/mcu-fase-1.json").subscribe((movies) => {
       this.fase1 = movies;
       console.log(this.fase1)
     })
   }
 
   getFase2() {
-    this.http.get("http://localhost:4200/assets/data/mcu-fase-2.json").subscribe((movies) => {
+    this.http.get("https://raw.githubusercontent.com/JoaoDev1601/api/main/mcu-fase-2.json").subscribe((movies) => {
       this.fase2 = movies;
       console.log(this.fase2)
     })
   }
 
   getFase3() {
-    this.http.get("http://localhost:4200/assets/data/mcu-fase-3.json").subscribe((movies) => {
+    this.http.get("https://raw.githubusercontent.com/JoaoDev1601/api/main/mcu-fase-3.json").subscribe((movies) => {
       this.fase3 = movies;
       console.log(this.fase3)
     })
   }
 
   getFase4() {
-    this.http.get("http://localhost:4200/assets/data/mcu-fase-4.json").subscribe((movies) => {
+    this.http.get("https://raw.githubusercontent.com/JoaoDev1601/api/main/mcu-fase-4.json").subscribe((movies) => {
       this.fase4 = movies;
       console.log(this.fase4)
     })
   }
 
   getFase5() {
-    this.http.get("http://localhost:4200/assets/data/mcu-fase-5.json").subscribe((movies) => {
+    this.http.get("https://raw.githubusercontent.com/JoaoDev1601/api/main/mcu-fase-5.json").subscribe((movies) => {
       this.fase5 = movies;
       console.log(this.fase5)
     })
   }
 
   getCronOrder() {
-    this.http.get("http://localhost:4200/assets/data/mcu-ordem-crono.json").subscribe((movies) => {
+    this.http.get("https://raw.githubusercontent.com/JoaoDev1601/api/main/mcu-ordem-crono.json").subscribe((movies) => {
       this.cronOrder = movies;
       console.log(this.cronOrder)
     })
@@ -83,6 +74,10 @@ export class HomeComponent implements OnInit {
 
   goToMovie(type:string, id:string) {
     this.router.navigate(["movie", type, id]);
+  }
+
+  goToShow(type:string, id:string) {
+    this.router.navigate(["show", type, id]);
   }
 
 }

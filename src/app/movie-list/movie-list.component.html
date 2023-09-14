@@ -1,17 +1,25 @@
 <app-header></app-header>
 
 <div class="movie-list">
+
     <h4 class="heading">
         Estes são todos os filmes do MCU até o momento!
     </h4>
 
     <div class="movie-container">
+
         <div class="thumbnail">
+
             <div class="movies" *ngFor="let movie of filmes">
-                <div class="cover" (click)="goToMovie('film', movie.titulo)">
+
+                <div class="cover" (click)="goToMovie('filme', movie.titulo)">
                     <img [src]="movie.poster" alt="">
                 </div>
+
             </div>
+
         </div>
+
     </div>
+    
 </div>

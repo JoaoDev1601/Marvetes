@@ -1,4 +1,21 @@
 *{
     color: #fff;
     scroll-behavior: smooth;
+
+    ::-webkit-scrollbar{
+        width: 0;
+        height: 5px;
+    }
+     
+    ::-webkit-scrollbar-thumb{
+        -webkit-border-radius: 10px;
+        border-radius: 20px;
+        background: linear-gradient(107.2deg, rgb(150, 15, 15) 10.6%, rgb(167, 4, 4) 91.1%); 
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+    }
+
+    ::-webkit-scrollbar-thumb:window-inactive{
+        background: rgba(255,0,0,0.4); 
+    }
 }
+

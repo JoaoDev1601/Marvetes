@@ -2,81 +2,90 @@
 
 <div class="movie">
 
+    <!-- Backgound -->
     <div class="bg">
         <img [src]="movie.bg">
     </div>
 
-    <div class="dets" *ngFor="let detalhes of movie.detalhes">
+    <!-- Parte de Cima-->
+    <div class="top">
 
-        <div class="dets-left">
+        <!-- Detalhes-->
+        <div class="dets" *ngFor="let detalhes of movie.detalhes">
 
-            <div class="poster"><img [src]="movie.poster" alt=""></div>
+            <!-- Detalhes esquerda -->
+            <div class="dets-left">
 
-        </div>
-    
-        <div class="dets-right">
-            
-            <div class="title"><h1>{{movie.titulo}}</h1></div>
-
-            <div class="top-right">
-            
-                    <div class="nota"><fa-icon [icon]="starIcon"></fa-icon>{{movie.nota}}</div>
-
-                    <div class="separator"></div>
-            
-                    <div class="duracao">{{detalhes.duracao}}</div>
-                    
-                    <div class="separator"></div>
-            
-                    <div class="data">{{detalhes.data}}</div>
-        
-                    <div class="separator"></div>
-        
-                    <div class="classi">{{detalhes.classificacao}}</div>
+                <div class="poster"><img [src]="movie.poster" alt=""></div>
 
             </div>
+
+            <!-- Detalhes direita -->
+            <div class="dets-right">
                 
-            <div class="genero">{{detalhes.genero}}</div>
-            
-            <div class="sinopse">{{detalhes.sinopse}}</div>
-    
-            <div class="elenco"><h4>Estrelando</h4>
-            {{detalhes.elenco}}</div>
-            
-            <div class="direcao"><h4>Direção/Criação</h4>
-            {{detalhes.direcao}} {{detalhes.criacao}}</div>
+                <div class="title"><h1>{{movie.titulo}}</h1></div>
 
-            <div class="roteiro"><h4>Roteiro</h4>
-            {{detalhes.roteiro}}</div>
+                <div class="top-right">
+                
+                        <div class="nota"><fa-icon [icon]="starIcon"></fa-icon>{{movie.nota}}</div>
+
+                        <div class="separator"></div>
+                
+                        <div class="duracao">{{detalhes.duracao}}</div>
+                        
+                        <div class="separator"></div>
+                
+                        <div class="data">{{detalhes.data}}</div>
+            
+                        <div class="separator"></div>
+            
+                        <div class="classi">{{detalhes.classificacao}}</div>
+
+                </div>
+                    
+                <div class="genero">{{detalhes.genero}}</div>
+                
+                <div class="sinopse">{{detalhes.sinopse}}</div>
+
+                <div class="elenco"><h4>Estrelando</h4>
+                {{detalhes.elenco}}</div>
+                
+                <div class="direcao"><h4>Direção</h4>
+                {{detalhes.direcao}}</div>
+
+                <div class="roteiro"><h4>Roteiro</h4>
+                {{detalhes.roteiro}}</div>
+
+            </div>
 
         </div>
-
-    </div>
-
-    <div class="player" *ngFor="let detalhes of movie.detalhes">
         
-        <h2>Escolha o idioma</h2>
-    
-        <input class="dub-btn" type="button" value="Dublado" onClick="window.location.reload(true)">
+    </div>
 
-        <div id="cls">
+    <!-- Parte de Baixo-->
+    <div class="bottom">
 
-          <img class="movie-player"
-            class="vidyard-player-embed"
-            src="https://play.vidyard.com/{{movie.filme}}.jpg"
-            [attr.data-uuid]="movie.filme"
-            data-v="4"
-            data-type="inline"
-            />
+        <!-- Player-->
+        <div class="player" *ngFor="let detalhes of movie.detalhes">
+                
+            <h2>Escolha o idioma</h2>
+
+            <input class="dub-btn" type="button" value="Dublado" onClick="window.location.reload(true)">
+
+            <div id="cls">
+
+                <img class="movie-player"
+                class="vidyard-player-embed"
+                src="https://play.vidyard.com/{{movie.filme}}.jpg"
+                [attr.data-uuid]="movie.filme"
+                data-v="4"
+                data-type="inline"
+                />
+
+            </div>
 
         </div>
 
     </div>
-    
+
 </div>
-
-
-
-
-
-

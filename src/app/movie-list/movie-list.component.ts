@@ -21,7 +21,7 @@ export class MovieListComponent implements OnInit{
   }
 
   getFilmes() {
-    this.http.get("http://localhost:4200/assets/data/filmes.json").subscribe((movies) => {
+    this.http.get("https://raw.githubusercontent.com/JoaoDev1601/api/main/filmes.json").subscribe((movies) => {
       this.filmes = movies;
       console.log(this.filmes)
     })

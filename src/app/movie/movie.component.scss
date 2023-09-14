@@ -111,6 +111,11 @@
     margin-left: 15px;
     margin-right: 15px;
 }
+.movie-player{
+    border-radius: 15px;
+    width: auto;
+    height: 50%;
+}
 
 .btns{
     margin-top: 15px;
@@ -133,25 +138,18 @@
     color: #fff;
     border: none;
     border-radius: 15px;
-    padding: 10px;
-    margin-bottom: 5px;
-}
-.movie-player{
-    border-radius: 15px;
-    width: auto;
-    height: 50%;
+    margin-bottom: 10px;
+    padding: 6px;
 }
 
 @media (max-width: 750px){
-    .dets{
+    .dets[_ngcontent-ng-c3375198649]{
         display: block;
     }
 
-    .dets-left{
-        .poster img{
-            margin-left: 50px;
-            width: 200px;
-        }
+    .dets-left[_ngcontent-ng-c3375198649]   .poster[_ngcontent-ng-c3375198649]   img[_ngcontent-ng-c3375198649] {
+        margin: 10px;
+        width: 100%;
     }
 }
 

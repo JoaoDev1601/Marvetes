@@ -1,0 +1,88 @@
+<app-header></app-header>
+
+<div class="episode">
+
+    <!-- Parte de Cima-->
+    <div class="top">
+    
+        <!-- Detalhes -->
+        <div class="dets">
+
+            <!-- Detalhes esquerda -->
+            <div class="dets-left">
+    
+                <div class="poster"><img [src]="movies.poster" alt=""></div>
+
+                <div class="next-btn">
+                    <a href="episode/watch/{{movies.prox}}"><h2>Próximo Episódio</h2></a>
+                </div>
+    
+            </div>
+    
+            <!--Detalhes direita-->
+            <div class="dets-right">
+                
+                <div class="title"><h1>{{movies.titulo}}</h1></div>
+    
+                <div class="bottom-right">
+                
+                        <div class="nota"><fa-icon [icon]="starIcon"></fa-icon>{{movies.nota}}</div>
+    
+                        <div class="separator"></div>
+                
+                        <div class="duracao">{{movies.duracao}}</div>
+                        
+                        <div class="separator"></div>
+                
+                        <div class="data">{{movies.data}}</div>
+            
+                        <div class="separator"></div>
+
+                        <div class="nep">{{movies.episodio}}</div>
+
+                        <div class="separator"></div>
+            
+                        <div class="classi">{{movies.classificacao}}</div>
+                        
+                </div>
+                    
+                <div class="genero">{{movies.genero}}</div>
+                
+                <div class="sinopse">{{movies.sinopse}}</div>
+                
+                <div class="direcao"><h4>Direção</h4>{{movies.direcao}}</div>
+
+                <div class="direcao"><h4>Roteiro</h4>{{movies.roteiro}}</div>
+    
+            </div>
+    
+        </div>
+
+    </div>
+    
+    <!-- Parte de Baixo-->
+    <div class="bottom">
+        
+        <h2>Escolha o idioma</h2>
+
+        <!-- Seleção de idioma -->
+        <div class="btns">
+            <div class="lang">
+                <input class="dub-btn" type="button" value="Dublado" onClick="window.location.reload(true)">    
+            </div>
+        </div>
+
+        <!-- Player -->
+        <div class="player">
+            <img class="movie-player"
+            class="vidyard-player-embed"
+            src="https://play.vidyard.com/{{movies.ep}}.jpg"
+            [attr.data-uuid]="movies.ep"
+            data-v="4"
+            data-type="inline"
+            />
+        </div>
+
+    </div>
+    
+</div>

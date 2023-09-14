@@ -12,8 +12,6 @@ export class MovieComponent implements OnInit{
   
   starIcon = faStar
 
-  youtubePlayer = false;
-
   type = '';
   titulo = '';
   url = '';
@@ -25,8 +23,8 @@ export class MovieComponent implements OnInit{
   ngOnInit(): void {
     this.type = this.route.snapshot.params['type'];
     this.titulo = this.route.snapshot.params['titulo'];
-    if (this.type === 'film') {
-      this.url = "http://localhost:4200/assets/data/mcu-ordem-crono.json";
+    if (this.type === 'filme') {
+      this.url = "https://raw.githubusercontent.com/JoaoDev1601/api/main/mcu-ordem-crono.json";
     }
     this.getMovie();
   }

@@ -1,1 +1,99 @@
 <app-header></app-header>
+
+<div class="show">
+
+    <!-- Background -->
+    <div class="bg">
+        <img [src]="movie.bg">
+    </div>
+    
+    <!-- Parte de Cima-->
+    <div class="top">
+        
+        <!-- Detalhes-->
+        <div class="dets" *ngFor="let detalhes of movie.detalhes">
+    
+            <!-- Detalhes esquerda-->
+            <div class="dets-left">
+    
+                <div class="poster"><img [src]="movie.p1" alt=""></div>
+    
+            </div>
+        
+            <!-- Detalhes direita-->
+            <div class="dets-right">
+                
+                <div class="title"><h1>{{movie.titulo}}</h1></div>
+    
+                <div class="top-right">
+                
+                        <div class="nota"><fa-icon [icon]="starIcon"></fa-icon>{{movie.nota}}</div>
+    
+                        <div class="separator"></div>
+                
+                        <div class="duracao">{{detalhes.duracao}}</div>
+                        
+                        <div class="separator"></div>
+                
+                        <div class="data">{{detalhes.data}}</div>
+            
+                        <div class="separator"></div>
+            
+                        <div class="classi">{{detalhes.classificacao}}</div>
+    
+                </div>
+                    
+                <div class="genero">{{detalhes.genero}}</div>
+                
+                <div class="sinopse">{{detalhes.sinopse}}</div>
+        
+                <div class="elenco"><h4>Estrelando</h4>{{detalhes.elenco}}</div>
+                
+                <div class="direcao"><h4>Criação</h4>{{detalhes.criacao}}</div>
+    
+            </div>
+    
+        </div>
+
+    </div>
+
+    <!-- Parte de Baixo-->
+    <div class="bottom">
+
+        <div class="heading">
+            <h4>Temp. 1 - Episódios</h4>
+        </div>
+    
+        <!-- Lista de episódios-->
+        <div class="episodes">
+    
+            <div class="ep" *ngFor="let episodios of movie.episodios">
+    
+                    <div class="ep-cover" (click)="goToEp('watch', episodios.titulo)">
+                        <img [src]="episodios.poster">
+                    </div>
+    
+                    <div class="ep-title">
+                        <h1>{{episodios.titulo}}</h1>
+                        <p>{{episodios.duracao}}</p>
+                    </div>
+    
+                    <div class="ep-dets">
+                        <p>{{episodios.data}}</p>
+                    </div>
+    
+            </div>
+    
+        </div>
+        
+    </div>
+        
+</div>
+
+
+
+
+
+
+
+

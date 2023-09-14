@@ -1,17 +1,25 @@
 <app-header></app-header>
 
 <div class="show-list">
+
     <h4 class="heading">
         Estas são todas as séries do MCU até o momento!
     </h4>
 
     <div class="show-container">
+        
         <div class="thumbnail">
+            
             <div class="shows" *ngFor="let movie of series">
-                <div class="cover" (click)="goToMovie('film', movie.titulo)">
-                    <img [src]="movie.poster" alt="">
+
+                <div class="cover" (click)="goToShow('serie', movie.titulo)">
+                    <img [src]="movie.p1" alt="">
                 </div>
+
             </div>
+
         </div>
+
     </div>
+
 </div>

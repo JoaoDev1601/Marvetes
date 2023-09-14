@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -31,31 +32,36 @@ z-index: 9999;
     color: #fff;
     
   .logo {
-    font-size: 32px;
+    font-size: 25px;
   }
-  .logo a:hover{
-    background: linear-gradient(107.2deg, rgb(150, 15, 15) 10.6%, rgb(247, 0, 0) 91.1%);
-    border-radius: 10px;
-    transition: .7s ease;
-    padding: 5px;
-  }
+}
+.navbar * {
+  box-sizing: border-box;
+  transition: all .35s ease;
+}
+.navbar a {
+  padding: .5em .8em;
+  color: rgba(255, 255, 255, 0.705);
+  position: relative;
+  text-decoration: none;
+}
+.navbar a::before,
+.navbar a::after {
+  content: '';
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  transition: all .35s ease;
+  opacity: 0;
 }
 
 .menu{
-    background-color: rgb(19, 18, 22);
-    display: flex;
-    gap: 1em;
-    font-size: 18px;
+  background-color: rgb(19, 18, 22);
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
 }
-.menu li{
-    padding: 5px 14px;
-}
-.menu li:hover{
-    background: linear-gradient(107.2deg, rgb(150, 15, 15) 10.6%, rgb(247, 0, 0) 91.1%);
-    border-radius: 10px;
-    transition: .7s ease;
-}
-  
+
 .dropdown{
     background-color: rgb(19, 18, 22);
     padding: 1em 0;
@@ -72,20 +78,45 @@ z-index: 9999;
     width: 8em;
     text-align: center;
 }
-.dropdown li:hover{
-    background-color: rgb(44, 43, 46);
-}
 
 input[type=checkbox]{
     display: none;
-} 
-
+}
 .hamburger{
     display: none;
     font-size: 24px;
     user-select: none;
 }
-  
+
+//hover
+@media (min-width: 769px){
+  .navbar a::before {
+    content: '';
+    right: 0;
+    top: 0;
+    border-top: 3px solid red;
+    border-right: 3px solid darkred;
+    transform: translate(-100%, 50%);
+  }
+  .navbar a:after {
+    content: '';
+    left: 0;
+    bottom: 0;
+    border-bottom: 3px solid red;
+    border-left: 3px solid darkred;
+    transform: translate(100%, -50%)
+  }
+  .navbar a:hover:before,
+  .navbar a:hover:after{
+    transform: translate(0,0);
+    opacity: 1;
+  }
+  .navbar a:hover {
+    color: #fff;
+  }
+}
+
+//small devices
 @media (max-width: 768px){
    .menu{
       display:none;
@@ -93,17 +124,8 @@ input[type=checkbox]{
       background-color: rgb(19, 18, 22);
       right: 0;
       left: 0;
-      text-align: center;
       padding: 16px 0;
-    }
-    .menu li{
-        border-right: 1px solid darkred;
-        border-left: 1px solid darkred;
-    }
-    .menu li:hover{
-      display: inline-block;
-      background-color:rgb(44, 43, 46);
-      transition: 0.3s ease;
+      padding-left: 10px;
     }
     .menu li + li{
       margin-top: 12px;
@@ -122,4 +144,16 @@ input[type=checkbox]{
       top: 30px;
       transform: translateX(35%);
     }
+
+    .hamb{
+      font-size: 20px;
+      border-left: 5px solid rgb(150, 15, 15);
+    }
+    .menu li{
+      padding-bottom: 25px;
+    }
+
+    .logo a{
+      padding: 0 0;
+  }
 }
