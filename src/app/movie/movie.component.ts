@@ -27,6 +27,13 @@ export class MovieComponent implements OnInit{
       this.url = "https://raw.githubusercontent.com/JoaoDev1601/api/main/mcu-ordem-crono.json";
     }
     this.getMovie();
+
+    this.type = this.route.snapshot.params['type'];
+    this.titulo = this.route.snapshot.params['titulo'];
+    if (this.type === 'filme') {
+      this.url = "https://raw.githubusercontent.com/JoaoDev1601/api/main/spiders.json";
+    }
+    this.getMovie();
   }
 
   getMovie(): void {

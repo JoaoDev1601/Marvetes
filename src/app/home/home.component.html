@@ -21,19 +21,19 @@
 
                 <div class="testimonials">
 
-                    <label class="item" for="t-1">
-                        <img src="https://www.themoviedb.org/t/p/original/b42UaXsufDYQVjwNPaZbXVfJ38B.jpg" alt="picture">
-                        <p>Em uma noite escura e sombria, uma cabala secreta de caçadores de monstros emerge das sombras e se reúne no templo de Bloodstone após a morte de seu líder. Em um estranho e macabro memorial à vida do líder.</p>
-                        <a href="movie/filme/Lobisomen%20na%20Noite"><h2>Lobisomen na Noite</h2></a>
+                    <label class="item" for="t-3">
+                        <img src="https://play.vidyard.com/fc7B5fE1u8TjYDRKLJzVdT.jpg" alt="picture">
+                        <p>Junto com Mobius, B-15 e uma equipe de personagens novos e antigos, Loki navega por um multiverso em constante expansão e cada vez mais perigoso em busca da verdade sobre o que significa ter livre arbítrio e um propósito glorioso.</p>
+                        <a href="show/serie/Loki"><h2>Loki</h2></a>
                     </label>
 
-                    <label class="item" for="t-2">
+                    <label class="item" for="t-1">
                         <img src="https://image.tmdb.org/t/p/original/fmq4YxfqldYbNg4jE5zHqiuPxtR.jpg" alt="picture">
                         <p>Thor parte em uma jornada de autodescoberta, diferente de tudo que ele já enfrentou. Mas seus esforços são interrompidos por um assassino galáctico conhecido como Gorr, o Carniceiro dos Deuses, que busca a extinção dos deuses.</p>
                         <a href="movie/filme/Thor:%20Amor%20e%20Trovão"><h2>Thor: Amor e Trovão</h2></a>
                     </label>
 
-                    <label class="item" for="t-3">
+                    <label class="item" for="t-2">
                         <img src="https://image.tmdb.org/t/p/original/bgWWYcUIsnYWhHtSQyk3euwjBoL.jpg" alt="picture">
                         <p>Nick Fury descobre que uma facção de metamorfos Skrulls pretende invadir a Terra. Fury se junta a aliados incluindo Everett Ross, Maria Hill e o Skrull Talos, que estava vivendo na Terra. Juntos eles correm contra o tempo para impedir a invasão Skrull</p>
                         <a href="show/serie/Invasão%20Secreta"><h2>Invasão Secreta</h2></a>
@@ -163,6 +163,21 @@
                         <img [src]="movie.poster" alt="" (click)="goToMovie('filme', movie.titulo)">
                         <img [src]="movie.p1" alt="" (click)="goToShow('serie', movie.titulo)">
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="spiderverse">
+            <div class="heading">
+                <h4>Aranhaverso: Ordem de Lançamento</h4>
+            </div>
+    
+            <div class="thumbnail">
+                <div class="spd-vrs" *ngFor="let movie of spiderVerse">
+                    <div class="cover">
+                        <img [src]="movie.poster" alt="" (click)="goToMovie('filme', movie.titulo)">
+                    </div>
+                    
                 </div>
             </div>
         </div>

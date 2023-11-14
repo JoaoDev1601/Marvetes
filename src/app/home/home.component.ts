@@ -18,6 +18,7 @@ export class HomeComponent implements OnInit {
   fase4:any;
   fase5:any;
   cronOrder:any;
+  spiderVerse:any;
 
   constructor(private http: HttpClient, private router: Router) { }
 
@@ -28,6 +29,7 @@ export class HomeComponent implements OnInit {
       this.getFase4();
       this.getFase5();
       this.getCronOrder();
+      this.getSpiderVerse();
   }
 
   getFase1() {
@@ -69,6 +71,13 @@ export class HomeComponent implements OnInit {
     this.http.get("https://raw.githubusercontent.com/JoaoDev1601/api/main/mcu-ordem-crono.json").subscribe((movies) => {
       this.cronOrder = movies;
       console.log(this.cronOrder)
+    })
+  }
+
+  getSpiderVerse() {
+    this.http.get("https://raw.githubusercontent.com/JoaoDev1601/api/main/spiders.json").subscribe((movies) => {
+      this.spiderVerse = movies;
+      console.log(this.spiderVerse)
     })
   }
 
