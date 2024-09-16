@@ -1,0 +1,292 @@
+[
+    {
+        "id": 47,
+        "titulo": "Homem-Formiga e a Vespa: Quantumania",
+        "bg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/C99738D5EAAB656BDA2DD60C3B9B1F1318859CDA22E2FEE395B28DB50C937007/scale?width=1440&aspectRatio=1.78&format=jpeg",
+        "poster": "https://www.themoviedb.org/t/p/original/pDNT1gXhZEV1V70eCVmJAQNEqBl.jpg",
+        "nota": 6.1,
+        "detalhes": [
+            {
+                "sinopse":"Scott Lang e Hope van Dyne em suas jornadas como super-heróis. Scott e sua família são puxados para o Reino Quântico, onde eles precisarão enfrentar um novo e terrível vilão: Kang, o Conquistador e M.O.D.O.K..",
+                "duracao": "2h 6min",
+                "data":"2023",
+                "genero":"Ficção Científica, Super-Heróis, Ação e Aventura",
+                "classificacao":"12",
+                "direcao":"Peyton Reed",
+                "roteiro": "Jeff Loveness",
+                "elenco":"Paul Rudd, Evangeline Lilly, Michael Douglas, Michelle Pfeiffer, Kathryn Newton, Jonathan Majors"
+            }
+        ]
+    },
+
+    {
+        "id": 51,
+        "titulo": "Guardiões da Galáxia vol.3",
+        "bg": "https://www.themoviedb.org/t/p/original/rVSsjepWbzfS2gIM6Cd5MTKVjUA.jpg",
+        "poster": "https://www.themoviedb.org/t/p/original/4yycSPnchdNAZirGkmCYQwTd3cr.jpg",
+        "nota": 8.0,
+	    "detalhes": [
+            {
+                "sinopse":"Peter Quill, que ainda está se recuperando da perda de Gamora, tem que reunir a sua equipe para defender o universo e proteger um dos seus. Uma missão que, se não for concluída com sucesso, pode levar ao fim dos Guardiões como os conhecemos.",
+                "duracao": "2h 30min",
+                "data":"2023",
+                "genero":"Ficção Científica, Super-Heróis, Ação e Aventura",
+                "classificacao":"14",
+                "direcao":"James Gunn",
+                "roteiro": "James Gunn",
+                "elenco":"Chris Pratt, Zoe Saldana, Dave Bautista, Vin Diesel, Bradley Cooper, Pom Klementieff, Karen Gillan"
+            }
+        ]
+    },
+    
+    {
+        "id": 52,
+        "titulo": "Invasão Secreta",
+        "bg": "https://www.themoviedb.org/t/p/original/bgWWYcUIsnYWhHtSQyk3euwjBoL.jpg",
+        "p1": "https://www.themoviedb.org/t/p/original/2N892H3CirkrFC4vulZfMVSUbAZ.jpg",
+        "nota": 6.0,
+	    "detalhes": [
+            {
+                "sinopse":"Nick Fury descobre que uma facção de metamorfos Skrulls pretende invadir a Terra. Fury se junta a aliados incluindo Everett Ross, Maria Hill e o Skrull Talos, que estava vivendo na Terra. Juntos eles correm contra o tempo para impedir a invasão Skrull iminente e salvar a humanidade.",
+                "duracao": "44min",
+                "data":"2022",
+                "genero":"Ficção Científica, Fantasia, Drama, Ação e Aventura",
+                "classificacao":"14",
+                "classificacao temp.1":"14",
+                "ciracao":"Kyle Bradstreet",
+                "elenco":"Samuel L. Jackson, Ben Mendelsohn, Kingsley Ben-Adir, Emilia Clark, Olivia Colman, Don Cheadle"
+            }
+        ],
+        "episodios": [
+            {
+                "titulo":"Ressureição",
+                "poster": "https://www.themoviedb.org/t/p/w227_and_h127_bestv2/yyx0s1TRRjqT9pqFUVm70IBENQP.jpg",
+                "nota": 7.1,
+                "duracao": "55min",
+                "sinopse": "Nick Fury toma conhecimento de uma invasão clandestina da Terra por Skrulls.",
+                "classificacao":"14"
+            },
+            {
+                "titulo":"Promessas",
+                "poster": "https://www.themoviedb.org/t/p/w227_and_h127_bestv2/fgZdDp3PRksanaEhrAne3ufVO3X.jpg",
+                "nota": 7.2,
+                "duracao": "56min",
+                "sinopse": "Fury luta com o passado e o presente.",
+                "classificacao":"14"
+            },
+            {
+                "titulo":"Traído",
+                "poster": "https://www.themoviedb.org/t/p/w227_and_h127_bestv2/1F3UCOXyAKGj0dRb338hhk7nABh.jpg",
+                "nota": 6.9,
+                "duracao": "42min",
+                "sinopse": "Fury descobre uma conspiração Skrull rebelde.",
+                "classificacao":"14"
+            },
+            {
+                "titulo":"Amado",
+                "poster": "https://www.themoviedb.org/t/p/w227_and_h127_bestv2/pbQ9GEYrZ52Y4oV2RBiQPtSo6M3.jpg",
+                "nota": 7.3,
+                "duracao": "38min",
+                "sinopse": "Fury precisa fazer alguns sacrifícios custosos.",
+                "classificacao":"14"
+            },
+            {
+                "titulo":"Colheita",
+                "poster": "https://www.themoviedb.org/t/p/w227_and_h127_bestv2/psEdUcyKqyFJA5QJkLDpsB5OaCI.jpg",
+                "nota": 6.8,
+                "duracao": "39min",
+                "sinopse": "Fury reúne seus aliados. Gravik lida com a inquietação.",
+                "classificacao":"14"
+            },
+            {
+                "titulo":"Lar",
+                "poster": "https://www.themoviedb.org/t/p/w227_and_h127_bestv2/3RJU5QMdfz6ufTocIcLOzN0wM9M.jpg",
+                "nota": 5.5,
+                "duracao": "38min",
+                "sinopse": "Toda a esperança para a humanidade se encontra nos ombros de Fury.",
+                "classificacao":"14"
+            }
+        ]
+    },
+    
+    {
+        "id": 32,
+        "titulo": "Loki",
+        "bg": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/998A3834BB932A55D75F385B71EBAC16589A1D0E43898B0BBF0AB49B2CDEAC4F/scale?width=1440&aspectRatio=1.78&format=jpeg",
+        "p1": "https://www.themoviedb.org/t/p/original/voHUmluYmKyleFkTu3lOXQG702u.jpg",
+        "nota": 8.2,
+	    "detalhes": [
+            {
+                "sinopse":"Começando imediatamente depois que Loki rouba o Tesseract (de novo), ele se encontra diante da Autoridade de Variação Temporal, uma organização burocrática que existe fora do tempo e espaço. Forçado a responder por seus crimes contra a linha do tempo, ele recebe uma escolha: Ser deletado da realidade ou ajudar a capturar uma ameaça ainda maior.",
+                "duracao": "52min",
+                "data":"2021-2023",
+                "genero":"Ficção Científica, Fantasia, Super-Heróis, Ação e Aventura",
+                "classificacao":"14",
+                "classificacao temp.1":"14",
+                "criacao":"Michael Waldron",
+                "elenco":"Tom Hiddleston, Owen Wilson, Sophia Di Martino"
+            }
+        ],
+        "temp1": [
+            {
+                "titulo":"Glorioso Propósito",
+                "poster": "https://www.themoviedb.org/t/p/w227_and_h127_bestv2/gxh0k3aADsYkt9tgkfm2kGn2qQj.jpg",
+                "nota": 8.6,
+                "duracao": "53min",
+                "sinopse": "Após roubar o Tesseract em 'Vingadores: Ultimato', Loki conhece a Autoridade de Variância Temporal.",
+                "classificacao":"14",
+                "data": "9 de Junho, 2021",
+                "direcao": "Kate Herron",
+                "roteiro": "Michael Waldron"
+            },
+            {
+                "titulo":"A Variante",
+                "poster": "https://www.themoviedb.org/t/p/w227_and_h127_bestv2/gqpcfkdmSsm6xiX2EsLkwUvA8g8.jpg",
+                "nota": 8.7,
+                "duracao": "56min",
+                "sinopse": "Mobius põe Loki para trabalhar, mas nem todos na AVT gostam da presença do Deus da Mentira.",
+                "classificacao":"14",
+                "data": "16 de Junho, 2021",
+                "direcao": "Kate Herron",
+                "roteiro": "Elissa Karasik"
+            },
+            {
+                "titulo":"Lamentis",
+                "poster": "https://www.themoviedb.org/t/p/w227_and_h127_bestv2/aTjfWml9Prd8cUB9cfk8yOAEh7v.jpg",
+                "nota": 7.7,
+                "duracao": "44min",
+                "sinopse": "Loki descobre os planos da Variante, mas seus próprios planos mudarão os destinos de ambos.",
+                "classificacao":"14",
+                "data": "23 de Junho, 2021",
+                "direcao": "Kate Herron",
+                "roteiro": "Bish K. Ali"
+            },
+            {
+                "titulo":"O Evento Nexus",
+                "poster": "https://www.themoviedb.org/t/p/w227_and_h127_bestv2/niIXLqEr98mnQuYuMuEvq9Y6OQa.jpg",
+                "nota": 9.0,
+                "duracao": "50min",
+                "sinopse": "Nervosismo e paranoia infiltram-se na AVT enquanto Mobius e Caçadora B-15 procuram Loki e Sylvie.",
+                "classificacao":"14",
+                "data": "30 de Junho, 2021",
+                "direcao": "Kate Herron",
+                "roteiro": "Eric Martin"
+            },
+            {
+                "titulo":"Jornada ao Mistério",
+                "poster": "https://www.themoviedb.org/t/p/w227_and_h127_bestv2/5fRAAO13URmteku8mb39V9YPJBb.jpg",
+                "nota": 8.9,
+                "duracao": "51min",
+                "sinopse": "Loki tenta escapar do Vazio, um purgatório desolado onde encontra versões Variantes de si mesmo.",
+                "classificacao":"14",
+                "data": "7 de Julho, 2021",
+                "direcao": "Kate Herron",
+                "roteiro": "Tom Kauffman"
+            },
+            {
+                "titulo":"Por Todo Sempre",
+                "poster": "https://www.themoviedb.org/t/p/w227_and_h127_bestv2/98hGgYbNFP8GnZhJzAar22bWIAT.jpg",
+                "nota": 8.6,
+                "duracao": "48min",
+                "sinopse": "É uma corrida contra o tempo no final de temporada, onde Loki e Sylvie enfrentam os seus destinos.",
+                "classificacao":"14",
+                "data": "14 de Julho, 2021",
+                "direcao": "Kate Herron",
+                "roteiro": "Eric Martin, Michael Waldron"
+            }
+        ],
+        "temptitle": "Temp. 2 - Episódios",
+        "temp2": [
+            {
+                "titulo":"Ouroboros",
+                "episodio": "T02E01",
+                "poster": "https://www.themoviedb.org/t/p/w227_and_h127_bestv2/d4S2xNIEb0DNUxi3L6p1SDxNiLR.jpg",
+                "ep": "",
+                "prox": "Quem é Brad",
+                "nota": 8.6,
+                "duracao": "48min",
+                "sinopse": "Loki se encontra perdido no tempo e se desfaz, literalmente, entre passado, presente e futuro.",
+                "classificacao":"14",
+                "data": "05 de Outubro, 2023",
+                "genero":"Ficção Científica, Fantasia, Super-Heróis, Ação e Aventura",
+                "direcao": "Justin Benson, Aaron Moorhead",
+                "roteiro": "Eric Martin"
+            },
+            {
+                "titulo":"Quem é Brad",
+                "episodio": "T02E02",
+                "poster": "https://www.themoviedb.org/t/p/w227_and_h127_bestv2/wFbZaHRtG7xLgUJINdX2t8LHzTU.jpg",
+                "ep": "",
+                "prox": "",
+                "nota": 7.8,
+                "duracao": "52min",
+                "sinopse": "Com a AVT à beira de um colapso temporal, Loki e Mobius não vão parar até encontrar Sylvie.",
+                "classificacao":"14",
+                "data": "12 de Outubro, 2023",
+                "genero":"Ficção Científica, Fantasia, Super-Heróis, Ação e Aventura",
+                "direcao": "Dan DeLeeuw",
+                "roteiro": "Eric Martin"
+            },
+            {
+                "titulo":"1893",
+                "episodio": "T02E03",
+                "poster": "https://www.themoviedb.org/t/p/w227_and_h127_bestv2/pwAniwa715V556WQSmoJiOvTchW.jpg",
+                "ep": "kudWv5uSQRnzpqrybdshoJ",
+                "prox": "Coração da AVT",
+                "nota": 8.0 ,
+                "duracao": "56min",
+                "sinopse": "Loki e Mobius saem em busca do relógio de desenho animado favorito de todos, enquanto tentam salvar a TVA.",
+                "classificacao":"14",
+                "data": "19 de Outubro, 2023",
+                "genero":"Ficção Científica, Fantasia, Super-Heróis, Ação e Aventura",
+                "direcao": "Kasra Farahani",
+                "roteiro": ""
+            },
+            {
+                "titulo":"Coração da AVT",
+                "episodio": "T02E04",
+                "poster": "https://www.themoviedb.org/t/p/w227_and_h127_bestv2/4vHnLqyYC4nPF7jgsEmAOVSVGfr.jpg",
+                "ep": "19ZQGRq5gquQNB8KaZZytG",
+                "prox": "Glorioso Propósito",
+                "nota": 8.9 ,
+                "duracao": "51min",
+                "sinopse": "O Tear da AVT está para se destruir, mas Loki e seu grupo têm uma variante d'Aquele que Permanece.",
+                "classificacao":"14",
+                "data": "26 de Outubro, 2023",
+                "genero":"Ficção Científica, Fantasia, Super-Heróis, Ação e Aventura",
+                "direcao": "Justin Benston, Aaron Moorhead",
+                "roteiro": "Eric Martin, Katharyn Blair"
+            },
+            {
+                "titulo":"Do Início",
+                "episodio": "T02E05",
+                "poster": "https://www.themoviedb.org/t/p/w227_and_h127_bestv2/47MjHBGiVbKcr1yB1buS5o6qmz8.jpg",
+                "ep": "pEbLp3gySLSmL6cN9hCwTm",
+                "prox": "Glorioso Propósito",
+                "nota": 9.0 ,
+                "duracao": "47min",
+                "sinopse": "Após um evento inesperado na AVT, Loki embarca em uma missão para solucionar os problemas que surgiram.",
+                "classificacao":"14",
+                "data": "2 de Novembro, 2023",
+                "genero":"Ficção Científica, Fantasia, Super-Heróis, Ação e Aventura",
+                "direcao": "Justin Benson, Aaron Moorhead",
+                "roteiro": "Eric Martin"
+            },
+            {
+                "titulo":"Glorious Purpose",
+                "episodio": "T02E06",
+                "poster": "https://www.themoviedb.org/t/p/w227_and_h127_bestv2/avCnQZPvHbqDLWMqlRNtayG732A.jpg",
+                "ep": "qHygyusNGZCMXJzYST6ZeU",
+                "prox": "Glorioso Propósito",
+                "nota":  9.6,
+                "duracao": "59min",
+                "sinopse": "Loki descobre a verdadeira natureza do 'glorioso propósito' enquanto reflete sobre o passado.",
+                "classificacao":"14",
+                "data": "9 de Novembro, 2023",
+                "genero":"Ficção Científica, Fantasia, Super-Heróis, Ação e Aventura",
+                "direcao": "Justin Benson, Aaron Moorhead",
+                "roteiro": "Eric Martin"
+            }
+        ]
+    }
+]
