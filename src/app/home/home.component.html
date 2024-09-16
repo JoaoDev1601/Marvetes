@@ -167,6 +167,22 @@
             </div>
         </div>
 
+        <!-- Os Defensores -->
+        <div class="defenders">
+            <div class="heading">
+                <h4>Universo Cinematográfico Marvel: Os Defensores</h4>
+            </div>
+    
+            <div class="thumbnail">
+                <div class="cr-or" *ngFor="let movie of defenders">
+                    <div class="cover" >
+                        <img [src]="movie.poster" alt="" (click)="goToMovie('filme', movie.titulo)">
+                        <img [src]="movie.p1" alt="" (click)="goToShow('serie', movie.titulo)">
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- SpiderVerse-->
         <div class="spiderverse">
             <div class="heading">

@@ -31,6 +31,13 @@ export class ShowComponent implements OnInit {
     }
     this.getMovie();
     this.getEp();
+
+    this.type = this.route.snapshot.params['type'];
+    this.titulo = this.route.snapshot.params['titulo'];
+    if (this.type === 'serie') {
+      this.url = "https://raw.githubusercontent.com/JoaoDev1601/api/main/defensores.json";
+    }
+    this.getMovie();
   }
 
   getMovie(): void {

@@ -109,6 +109,29 @@
             </div>
         </div>
 
+        <div class="heading" id="temp3">
+            <h4>{{movie.temptitle3}}</h4>
+        </div>
+
+        <div class="episodes" id="temp3">
+            <div class="ep" *ngFor="let temp3 of movie.temp3">
+            
+                <div class="ep-cover" (click)="goToEp('watch', temp3.titulo)">
+                    <img [src]="temp3.poster" alt="">
+                </div>
+
+                <div class="ep-title">
+                    <h1>{{temp3.titulo}}</h1>
+                    <p>{{temp3.duracao}}</p>
+                </div>
+
+                <div class="ep-dets">
+                    <p>{{temp3.data}}</p>
+                </div>
+
+            </div>
+        </div>
+
     </div>
         
 </div>
